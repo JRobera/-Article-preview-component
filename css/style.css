@@ -144,7 +144,6 @@
     .sharepop {
         width: 300px;
         right: 239px;
-        top: 225px;
         border-radius: 10px;
     }
     .sharepop::before {
