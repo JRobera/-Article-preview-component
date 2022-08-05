@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+ body {
+    background-color: hsl(210, 46%, 95%)
+ }
+
+.maincontainer {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+    margin: 50px auto;
+}
+.topimg {
+    width: 100%;
+    height: 225px;
+    overflow: hidden;
+}
+
+.topimg > img {
+    width: 100%;
+}
+
+.innercont {
+    width: 80%;
+    margin: 30px auto 5px;
+}
+
+.heading {
+    color: hsl(217, 19%, 35%);
+    font-size: 17px;
+    
+}
+.heading , .content {
+    line-height: 1.5;
+    margin: 10px auto 10px;
+}
+.content {
+    color:hsl(214, 17%, 51%);
+    font-size: 14px;
+}
+.profile {
+    position: relative;
+    margin: 30px 0 17px;
+}
+
+.profile > img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.detail {
+    position: absolute;
+    top: -5px;
+    left: 60px;
+}
+#name {
+    color: hsl(214, 17%, 51%);
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 2;
+}
+#date {
+    font-size: 13px;
+    color:  hsl(212, 23%, 69%);
+}
+.profile > #imgshare {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+    background-color: hsl(210, 46%, 95%);
+    padding: 9px;
+}
+.sharepop {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color:  hsl(217, 19%, 35%);
+    height: 65px;
+    bottom: 0;
+
+}
+.sharepop > div {
+    width: fit-content;
+    position: relative;
+    top: 50%;
+    transform: translate(16%, -50%);
+}
+.sharepop > div > span {
+    color: hsl(214, 17%, 51%);
+    letter-spacing: 5px;
+    margin-right: 15px;
+}
+.sharepop > div > a {
+    margin-right: 13px;
+}
+#imgshare.shareover {
+    background-color: hsl(212, 23%, 69%);
+    z-index: 10; 
+    top: 10px;}
+.show {display: block;}
+
+
+@media (min-width: 375px){
+
+    .maincontainer {
+        display: grid;
+        position: static;
+        height: 365px;
+        width: 62%;
+    }
+    .topimg {
+        grid-area: 1 / 1 / 3 / 2;
+        height: 100%;
+    }
+    .topimg > img {
+        height: 365px;
+    }
+    .innercont {
+        grid-area: 1 / 2 / 3 / 3;
+        margin: 40px 0 0 55px;
+    }
+    .heading {
+        font-size: 26px;
+        width: 95%;
+        margin: 0;
+    }
+    .content {
+        font-size: 17px;
+        width: 98%;
+        margin-left: 0;
+    }
+    .profile > #imgshare {
+        right: 10px;
+        top: 10px;
+    }
+    .sharepop {
+        width: 300px;
+        right: 239px;
+        top: 225px;
+        border-radius: 10px;
+    }
+    .sharepop::before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        background-color: inherit;
+        position: absolute;
+        bottom: -6px;
+        right: 133px;
+        transform: rotate(45deg);
+    }
+
+    .sharepop > div {
+        transform: translate(35%, -50%);
+    }
+    
+}
