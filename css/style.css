@@ -13,7 +13,7 @@
     overflow: hidden;
     position: relative;
     width: 90%;
-    margin: 50px auto;
+    margin: 188px auto;
 }
 .topimg {
     width: 100%;
@@ -60,11 +60,13 @@
 }
 #name {
     color: hsl(214, 17%, 51%);
+    display: block;
     font-weight: bold;
     font-size: 13px;
     line-height: 2;
 }
 #date {
+    display: block;
     font-size: 13px;
     color:  hsl(212, 23%, 69%);
 }
