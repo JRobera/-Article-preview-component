@@ -108,7 +108,7 @@
 .show {display: block;}
 
 
-@media (min-width: 375px){
+@media (min-width: 800px){
 
     .maincontainer {
         display: grid;
@@ -143,7 +143,8 @@
     }
     .sharepop {
         width: 300px;
-        right: 239px;
+        right: 245px;
+        top: 364px;
         border-radius: 10px;
     }
     .sharepop::before {
